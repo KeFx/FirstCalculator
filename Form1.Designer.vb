@@ -26,15 +26,16 @@ Partial Class Form1
         Me.Minus = New System.Windows.Forms.Button()
         Me.First = New System.Windows.Forms.TextBox()
         Me.Second = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.EqaulSign = New System.Windows.Forms.Label()
         Me.result = New System.Windows.Forms.TextBox()
         Me.Multiply = New System.Windows.Forms.Button()
         Me.Divide = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Num1Lbl = New System.Windows.Forms.Label()
+        Me.Num2Lbl = New System.Windows.Forms.Label()
+        Me.OutputLbl = New System.Windows.Forms.Label()
+        Me.OperationsLbl = New System.Windows.Forms.Label()
         Me.errorForSecond = New System.Windows.Forms.Label()
+        Me.errorForFirst = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Plus
@@ -69,14 +70,14 @@ Partial Class Form1
         Me.Second.Size = New System.Drawing.Size(150, 31)
         Me.Second.TabIndex = 3
         '
-        'Label1
+        'EqaulSign
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(384, 147)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(24, 25)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "="
+        Me.EqaulSign.AutoSize = True
+        Me.EqaulSign.Location = New System.Drawing.Point(384, 147)
+        Me.EqaulSign.Name = "EqaulSign"
+        Me.EqaulSign.Size = New System.Drawing.Size(24, 25)
+        Me.EqaulSign.TabIndex = 4
+        Me.EqaulSign.Text = "="
         '
         'result
         '
@@ -103,41 +104,41 @@ Partial Class Form1
         Me.Divide.Text = "/"
         Me.Divide.UseVisualStyleBackColor = True
         '
-        'Label2
+        'Num1Lbl
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 88)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 25)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "1st Number"
+        Me.Num1Lbl.AutoSize = True
+        Me.Num1Lbl.Location = New System.Drawing.Point(12, 88)
+        Me.Num1Lbl.Name = "Num1Lbl"
+        Me.Num1Lbl.Size = New System.Drawing.Size(106, 25)
+        Me.Num1Lbl.TabIndex = 8
+        Me.Num1Lbl.Text = "1st Number"
         '
-        'Label3
+        'Num2Lbl
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(198, 88)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(113, 25)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "2nd Number"
+        Me.Num2Lbl.AutoSize = True
+        Me.Num2Lbl.Location = New System.Drawing.Point(198, 88)
+        Me.Num2Lbl.Name = "Num2Lbl"
+        Me.Num2Lbl.Size = New System.Drawing.Size(113, 25)
+        Me.Num2Lbl.TabIndex = 9
+        Me.Num2Lbl.Text = "2nd Number"
         '
-        'Label4
+        'OutputLbl
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(439, 88)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 25)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "Output"
+        Me.OutputLbl.AutoSize = True
+        Me.OutputLbl.Location = New System.Drawing.Point(439, 88)
+        Me.OutputLbl.Name = "OutputLbl"
+        Me.OutputLbl.Size = New System.Drawing.Size(69, 25)
+        Me.OutputLbl.TabIndex = 10
+        Me.OutputLbl.Text = "Output"
         '
-        'Label5
+        'OperationsLbl
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(244, 278)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(104, 25)
-        Me.Label5.TabIndex = 11
-        Me.Label5.Text = "Operations:"
+        Me.OperationsLbl.AutoSize = True
+        Me.OperationsLbl.Location = New System.Drawing.Point(244, 278)
+        Me.OperationsLbl.Name = "OperationsLbl"
+        Me.OperationsLbl.Size = New System.Drawing.Size(104, 25)
+        Me.OperationsLbl.TabIndex = 11
+        Me.OperationsLbl.Text = "Operations:"
         '
         'errorForSecond
         '
@@ -145,24 +146,34 @@ Partial Class Form1
         Me.errorForSecond.ForeColor = System.Drawing.Color.Red
         Me.errorForSecond.Location = New System.Drawing.Point(198, 175)
         Me.errorForSecond.Name = "errorForSecond"
-        Me.errorForSecond.Size = New System.Drawing.Size(63, 25)
+        Me.errorForSecond.Size = New System.Drawing.Size(12, 25)
         Me.errorForSecond.TabIndex = 12
-        Me.errorForSecond.Text = "Label6"
+        Me.errorForSecond.Text = "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'errorForFirst
+        '
+        Me.errorForFirst.AutoSize = True
+        Me.errorForFirst.ForeColor = System.Drawing.Color.Red
+        Me.errorForFirst.Location = New System.Drawing.Point(12, 175)
+        Me.errorForFirst.Name = "errorForFirst"
+        Me.errorForFirst.Size = New System.Drawing.Size(0, 25)
+        Me.errorForFirst.TabIndex = 13
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(604, 480)
+        Me.Controls.Add(Me.errorForFirst)
         Me.Controls.Add(Me.errorForSecond)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.OperationsLbl)
+        Me.Controls.Add(Me.OutputLbl)
+        Me.Controls.Add(Me.Num2Lbl)
+        Me.Controls.Add(Me.Num1Lbl)
         Me.Controls.Add(Me.Divide)
         Me.Controls.Add(Me.Multiply)
         Me.Controls.Add(Me.result)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.EqaulSign)
         Me.Controls.Add(Me.Second)
         Me.Controls.Add(Me.First)
         Me.Controls.Add(Me.Minus)
@@ -178,13 +189,14 @@ Partial Class Form1
     Friend WithEvents Minus As Button
     Friend WithEvents First As TextBox
     Friend WithEvents Second As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents EqaulSign As Label
     Friend WithEvents result As TextBox
     Friend WithEvents Multiply As Button
     Friend WithEvents Divide As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents Num1Lbl As Label
+    Friend WithEvents Num2Lbl As Label
+    Friend WithEvents OutputLbl As Label
+    Friend WithEvents OperationsLbl As Label
     Friend WithEvents errorForSecond As Label
+    Friend WithEvents errorForFirst As Label
 End Class

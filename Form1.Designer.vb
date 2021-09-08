@@ -34,6 +34,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.errorForSecond = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Plus
@@ -138,11 +139,22 @@ Partial Class Form1
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Operations:"
         '
+        'errorForSecond
+        '
+        Me.errorForSecond.AutoSize = True
+        Me.errorForSecond.ForeColor = System.Drawing.Color.Red
+        Me.errorForSecond.Location = New System.Drawing.Point(198, 175)
+        Me.errorForSecond.Name = "errorForSecond"
+        Me.errorForSecond.Size = New System.Drawing.Size(63, 25)
+        Me.errorForSecond.TabIndex = 12
+        Me.errorForSecond.Text = "Label6"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(604, 480)
+        Me.Controls.Add(Me.errorForSecond)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -174,4 +186,5 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents errorForSecond As Label
 End Class

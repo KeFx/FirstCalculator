@@ -38,7 +38,7 @@ Partial Class Form1
         '
         'Plus
         '
-        Me.Plus.Location = New System.Drawing.Point(94, 259)
+        Me.Plus.Location = New System.Drawing.Point(244, 333)
         Me.Plus.Name = "Plus"
         Me.Plus.Size = New System.Drawing.Size(39, 34)
         Me.Plus.TabIndex = 0
@@ -47,7 +47,7 @@ Partial Class Form1
         '
         'Minus
         '
-        Me.Minus.Location = New System.Drawing.Point(94, 328)
+        Me.Minus.Location = New System.Drawing.Point(244, 402)
         Me.Minus.Name = "Minus"
         Me.Minus.Size = New System.Drawing.Size(39, 34)
         Me.Minus.TabIndex = 1
@@ -56,14 +56,14 @@ Partial Class Form1
         '
         'First
         '
-        Me.First.Location = New System.Drawing.Point(94, 145)
+        Me.First.Location = New System.Drawing.Point(12, 141)
         Me.First.Name = "First"
         Me.First.Size = New System.Drawing.Size(150, 31)
         Me.First.TabIndex = 2
         '
         'Second
         '
-        Me.Second.Location = New System.Drawing.Point(280, 145)
+        Me.Second.Location = New System.Drawing.Point(198, 141)
         Me.Second.Name = "Second"
         Me.Second.Size = New System.Drawing.Size(150, 31)
         Me.Second.TabIndex = 3
@@ -71,7 +71,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(466, 151)
+        Me.Label1.Location = New System.Drawing.Point(384, 147)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(24, 25)
         Me.Label1.TabIndex = 4
@@ -79,14 +79,14 @@ Partial Class Form1
         '
         'result
         '
-        Me.result.Location = New System.Drawing.Point(521, 145)
+        Me.result.Location = New System.Drawing.Point(439, 141)
         Me.result.Name = "result"
         Me.result.Size = New System.Drawing.Size(150, 31)
         Me.result.TabIndex = 5
         '
         'Multiply
         '
-        Me.Multiply.Location = New System.Drawing.Point(169, 259)
+        Me.Multiply.Location = New System.Drawing.Point(319, 333)
         Me.Multiply.Name = "Multiply"
         Me.Multiply.Size = New System.Drawing.Size(39, 34)
         Me.Multiply.TabIndex = 6
@@ -95,7 +95,7 @@ Partial Class Form1
         '
         'Divide
         '
-        Me.Divide.Location = New System.Drawing.Point(169, 328)
+        Me.Divide.Location = New System.Drawing.Point(319, 402)
         Me.Divide.Name = "Divide"
         Me.Divide.Size = New System.Drawing.Size(39, 34)
         Me.Divide.TabIndex = 7
@@ -105,7 +105,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(94, 92)
+        Me.Label2.Location = New System.Drawing.Point(12, 88)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(106, 25)
         Me.Label2.TabIndex = 8
@@ -114,7 +114,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(280, 92)
+        Me.Label3.Location = New System.Drawing.Point(198, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(113, 25)
         Me.Label3.TabIndex = 9
@@ -123,7 +123,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(521, 92)
+        Me.Label4.Location = New System.Drawing.Point(439, 88)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 25)
         Me.Label4.TabIndex = 10
@@ -132,7 +132,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(94, 204)
+        Me.Label5.Location = New System.Drawing.Point(244, 278)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(104, 25)
         Me.Label5.TabIndex = 11
@@ -142,7 +142,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(992, 477)
+        Me.ClientSize = New System.Drawing.Size(604, 480)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
